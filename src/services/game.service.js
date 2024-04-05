@@ -1,7 +1,7 @@
 import HttpService from "./Http.service";
 
 export default class GameService extends HttpService {
-  static async wordsGame(word) {
+  static async wordsGame(data) {
     const response = await this.request({
       method: "POST",
       url: "/word",
